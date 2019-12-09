@@ -11,10 +11,6 @@ ds = pd.read_csv("articulos-2.csv", encoding='utf-8')
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return 'Server Works!'
-
 @app.route('/product/<product_id>/', methods = ['POST'])
 def get_products_recommedation(product_id):
     if request.method == 'POST':
@@ -35,3 +31,11 @@ def get_products_recommedation(product_id):
         for i, rec in data:
             response.append(ds.loc[ds['product_id'] == rec]['product_name'].tolist()[0])
         return jsonify(response)
+
+@app.route('/')
+def index():
+    return "<h1>Welcome to our server !!</h1>"
+
+if __name__ == '__main__':
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
