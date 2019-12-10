@@ -2,7 +2,6 @@ asn1crypto==0.24.0
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
-command-not-found==0.3
 cryptography==2.1.4
 defer==1.0.6
 dnspython==1.15.0
