@@ -1,4 +1,4 @@
-#!/home/anthony/Desarrollo/product-recommend/env-ia/bin/python3
+#!/home/anthony/Desarrollo/product-recommend/env-pr/bin/python3
 
 # -*- coding: utf-8 -*-
 import re

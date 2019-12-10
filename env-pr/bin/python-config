@@ -1,4 +1,4 @@
-#!/home/anthony/Desarrollo/product-recommend/env-ia/bin/python
+#!/home/anthony/Desarrollo/product-recommend/env-pr/bin/python
 
 import sys
 import getopt
