@@ -11,7 +11,7 @@ ds = pd.read_csv("articulos-2.csv", encoding='utf-8')
 
 app = Flask(__name__)
 
-@app.route('/product/<product_id>/', methods = ['POST'])
+@app.route('/product/<product_id>', methods = ['POST'])
 def get_products_recommedation(product_id):
     if request.method == 'POST':
         tf = TfidfVectorizer(analyzer='word', ngram_range=(1, 3), min_df=0)
